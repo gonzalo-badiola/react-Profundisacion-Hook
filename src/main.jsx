@@ -1,12 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 // import { HooksApp } from './HooksApp';
-import './index.css'
-import { CounterApp } from './01-useState/CounterApp';
+// import { FormWhitCustomHook } from './02-useEffect/FormWhitCustomHooks';
+import "./index.css";
+import { MultipleCustomHooks } from "./03-examples/MultipleCustomHooks";
+import { Focusscreen } from "./04-useRef/Focusscreen";
 
+// import { SimpleForm } from './02-useEffect/SimpleForm';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
+// import { CounterApp } from './01-useState/CounterApp';
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CounterApp />
-  </React.StrictMode>,
-)
+    {/* <FormWhitCustomHook /> */}
+    <Focusscreen />
+  </React.StrictMode>
+);
